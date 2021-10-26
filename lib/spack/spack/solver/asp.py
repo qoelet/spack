@@ -602,7 +602,7 @@ class SpackSolverSetup(object):
             variant, when = entry
             for w in when:
                 cond_id = self.condition(w, name=pkg.name)
-                self.gen.fact(fn.variant_condition(pkg.name, name, cond_id))
+                self.gen.fact(fn.variant_condition(cond_id, pkg.name, name))
 
             single_value = not variant.multi
             if single_value:
