@@ -63,7 +63,7 @@ class Trilinos(CMakePackage, CudaPackage):
     # Build options
     variant('complex', default=False, description='Enable complex numbers in Trilinos')
     variant('cuda_rdc', default=False, description='turn on RDC for CUDA build')
-    variant('cxxstd', default='11', values=['11', '14', '17'], multi=False)
+    variant('cxxstd', default='14', values=['11', '14', '17'], multi=False)
     variant('debug', default=False, description='Enable runtime safety and debug checks')
     variant('explicit_template_instantiation', default=True, description='Enable explicit template instantiation (ETI)')
     variant('float', default=False, description='Enable single precision (float) numbers in Trilinos')
