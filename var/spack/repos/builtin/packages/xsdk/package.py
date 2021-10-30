@@ -86,7 +86,7 @@ class Xsdk(BundlePackage, CudaPackage, ROCmPackage):
     version('develop')
     version('0.7.0')
     version('0.6.0')
-    version('0.5.0')
+    version('0.5.0', deprecated=True)
     version('0.4.0', deprecated=True)
     version('0.3.0', deprecated=True)
 
